@@ -41,7 +41,9 @@ const ProductSchema = new Schema<IProduct>(
       min: 0,
     },
   },
-
+  {
+    timestamps: true,
+  }
 );
 
 export const Product = mongoose.model<IProduct>("Product", ProductSchema);
