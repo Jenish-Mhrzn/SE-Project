@@ -52,7 +52,7 @@ app.get("/health", (req, res) => {
   res.json({ status: "OK", timeStamp: new Date().toISOString() });
 });
 
-// ✅ Updated endpoint prefix
+
 app.use("/api/productcatalog", productcatalogRoutes);
 
 const startServer = async () => {
